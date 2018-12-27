@@ -17,8 +17,6 @@
   width: 60%;
   display: inline-block;
   padding: 300px 50px 0px 0px;
-
-
 }
 
 /* STYLES */
@@ -136,4 +134,21 @@ p {
   height: 40px;
   margin-top: 30px;
   padding-right: 10px;
+}
+
+
+/*Ab 1220px wird die Info oben 1-spaltig*/
+@media only screen and (max-width: 1220px) {
+  .left {
+    padding: 100px 10px 100px 100px;
+    float: none;
+    width: 70%;
+    display: block;
+  }
+
+  .right {
+    width: 100%;
+    display: block;
+    padding: 0px 100px 50px 100px;
+  }
 }
