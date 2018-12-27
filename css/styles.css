@@ -1,0 +1,10 @@
+/*    FONTS     */
+@font-face {
+  font-family: Archia Light;
+  src: url("../assets/fonts/archia-light-webfont.woff");
+}
+
+@font-face {
+  font-family: Archia SemiBold;
+  src: url("../assets/fonts/archia-semibold-webfont.woff");
+}
