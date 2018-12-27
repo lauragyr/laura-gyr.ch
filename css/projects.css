@@ -1,12 +1,25 @@
-.content {
-  margin: 100px 50px 0px 100px;
-  display: flex;
+.menubar {
+  background-color: #6102FA;
+}
+
+.menucircle {
+  border: 5px solid #FADD02;
 }
 
 .left {
-  width: px;
+  padding: 100px 10px 200px 100px;
+  float: left;
+  width: 40%;
+  display: inline-block;
 }
 
+.right {
+  width: 60%;
+  display: inline-block;
+  padding: 300px 50px 0px 0px;
+
+
+}
 
 /* STYLES */
 h3 {
@@ -17,17 +30,16 @@ h3 {
 
 h2 {
   font-family: Archia SemiBold;
-  font-size: 70pt;
+  font-size: 60pt;
   line-height: 1;
   color: #A5A5A5;
 }
 
 h1 {
   font-family: Archia Light;
-  font-size: 40pt;
+  font-size: 30pt;
   line-height: 1.2;
   color: #A5A5A5;
-  padding-top: 100px;
 }
 
 p {
@@ -46,5 +58,82 @@ p {
 
 /*  PROJECT   */
 .project {
+  clear: both;
   background-color: #F2F2F2;
+  padding: 100px;
+}
+
+.project > img {
+  padding-top: 70px;
+  border-radius: 1%;
+  backgroundcolor: #F2F2F2;
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+
+/* NEXT PROJECT  */
+.next {
+  height: 60vh;
+  padding: 70px 30px 0px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.next div:first-child {
+  width: 300px;
+  height: 200px;
+  border: 5px solid #FADD02;
+}
+
+.next div:first-child > h3 {
+  color: #6102FA;
+  text-align: right;
+  padding: 10px;
+}
+
+.next > div:nth-child(2) {
+  height: 140px;
+  width: 20px;
+  background-color: #FADD02;
+}
+
+
+/*  FOOTER  */
+.footer {
+  height: 60vh;
+  background-color: #6102FA;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer > div {
+  width: 500px;
+  padding: 20px;
+}
+
+.footer > div > h3 {
+  color: #FADD02;
+  font-family: Archia SemiBold;
+}
+
+.footer > div > p {
+  color: #FADD02;
+  padding-top: 20px;
+  line-height: 1.4;
+}
+
+.footer > div > p:nth-child(3) {
+  font-family: Archia SemiBold;
+}
+
+.footer > div > div {
+ display: flex;
+}
+
+.footer > div > div > img {
+  height: 40px;
+  margin-top: 30px;
+  padding-right: 10px;
 }
