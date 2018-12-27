@@ -19,9 +19,7 @@ h3 {
 .button {
   width: 250px;
   height: 145px;
-  border-style: solid;
-  border-width: 5px;
-  border-color: #FADD02;
+  border: 5px solid #FADD02;
   float: left;
   margin: 0px 20px 50px 0px;
   padding: 10px;
