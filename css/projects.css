@@ -1,0 +1,50 @@
+.content {
+  margin: 100px 50px 0px 100px;
+  display: flex;
+}
+
+.left {
+  width: px;
+}
+
+
+/* STYLES */
+h3 {
+  font-family: Archia SemiBold;
+  font-size: 30pt;
+  color: #FADD02;
+}
+
+h2 {
+  font-family: Archia SemiBold;
+  font-size: 70pt;
+  line-height: 1;
+  color: #A5A5A5;
+}
+
+h1 {
+  font-family: Archia Light;
+  font-size: 40pt;
+  line-height: 1.2;
+  color: #A5A5A5;
+  padding-top: 100px;
+}
+
+p {
+  font-family: Archia Light;
+}
+
+.bold {
+  font-family: Archia SemiBold;
+}
+
+.facts {
+  margin-top: 30px;
+  color: #A5A5A5;
+}
+
+
+/*  PROJECT   */
+.project {
+  background-color: #F2F2F2;
+}
