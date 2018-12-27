@@ -1,17 +1,18 @@
+/*   CONTAINERS   */
 #container .box {
   width:100vw;
   height:100vh;
   display:inline-block;
   position:relative;
+  border: 70px solid white;
 }
 
-#container .box > div {
-  width:550px;
-  height:400px;
+#container .cover + div {
   color:#FFF;
-  position:absolute;
-  top:50%;
-  left:20%;
+  position: absolute;
+  top:40%;
+  left:30%;
+  z-index: 3;
 }
 
 #container {
@@ -30,17 +31,31 @@
   white-space:nowrap;
 }
 
-.one {
-  padding: 20px;
-  background-color: #45CCFF;
+
+/*  BOXES   */
+.yellow {
+  background-color: #FADD02;
+  opacity: 0.5;
 }
-.two {
-  background-color: #49E83E;
-}
-.three {
-  background-color: #EDDE05;
+.violet {
+  background-color: #6102FA;
+  opacity: 0.5;
+  z-index: 2;
 }
 
+
+/*   CoVER   */
+.cover {
+  width:100%;
+  height:100%;
+  background-size: cover;
+  z-index: 1;
+}
+
+.one {
+  background-image: url("../assets/covers/ref-cover.png");
+
+ }
 
 
 /*   BOX-STYLE   */
