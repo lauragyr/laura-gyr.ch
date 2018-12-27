@@ -1,0 +1,25 @@
+#container .box {
+  width:100vw;
+  height:100vh;
+  display:inline-block;
+  position:relative;
+  border: 20px solid white;
+}
+
+#container .cover + div {
+  color:#FFF;
+  position: absolute;
+  top:10%;
+  left:10%;
+  z-index: 3;
+}
+
+#container {
+  position:absolute;
+  width:100vh;
+  height:100vw;
+}
+
+#containerscroll {
+
+}
