@@ -14,13 +14,10 @@
   box-sizing: border-box;
 }
 
-.content { padding: 30px 30px 30px 30px;}
-
 
 .menubar {
   height: 20px;
   width: 140px;
-  background-color: #6102FA;
   float: right;
   margin: 30px 30px 0px 0px;
 }
