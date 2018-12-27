@@ -1,0 +1,55 @@
+#container .box {
+  width:100vw;
+  height:100vh;
+  display:inline-block;
+  position:relative;
+}
+
+#container .box > div {
+  width:550px;
+  height:400px;
+  color:#FFF;
+  position:absolute;
+  top:50%;
+  left:20%;
+}
+
+#container {
+  overflow-y:scroll;
+  overflow-x:hidden;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  position:absolute;
+  width:100vh;
+  height:100vw;
+}
+
+#containerscroll {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space:nowrap;
+}
+
+.one {
+  padding: 20px;
+  background-color: #45CCFF;
+}
+.two {
+  background-color: #49E83E;
+}
+.three {
+  background-color: #EDDE05;
+}
+
+
+
+/*   BOX-STYLE   */
+.box h3 {
+  font-family: Archia SemiBold;
+  font-size: 30pt;
+}
+
+.box h2 {
+  font-family: Archia SemiBold;
+  font-size: 70pt;
+}
