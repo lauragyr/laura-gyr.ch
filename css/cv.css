@@ -6,40 +6,74 @@ body {
 background-color: #FFF;
 }
 
+/* MOBILE*/
 .about {
-  padding: 200px 100px 30px 50px;
+  padding: 70px 30px 30px 50px;
 }
 
+/* MOBILE*/
 h3 {
   font-family: Archia SemiBold;
   color: #FADD02;
-  font-size: 50pt;
-  padding-bottom: 100px;
+  font-size: 25pt;
+  padding-bottom: 70px;
 }
 
+/* MOBILE*/
 .button {
-  width: 250px;
-  height: 145px;
+  width: 150px;
+  height: 100px;
   border: 5px solid #FADD02;
-  float: left;
-  margin: 0px 20px 50px 0px;
+  float: none;
+  margin: 0px 20px 30px 0px;
   padding: 10px;
 }
 
+/* MOBILE*/
 .button p {
   color: #FFF;
   font-family: Archia SemiBold;
-  font-size: 30pt;
+  font-size: 17pt;
   text-align: right;
 }
 
+/* MOBILE*/
 .footnote {
   clear: both;
   color: #FFF;
   font-family: Archia Light;
-  font-size: 9pt;
+  font-size: 8pt;
 }
+
 
 span {
   font-family: Archia SemiBold;
+}
+
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 678px) {
+  .about {
+    padding: 200px 100px 30px 50px;
+  }
+
+  h3 {
+    font-size: 50pt;
+    padding-bottom: 100px;
+  }
+
+  .button {
+    width: 250px;
+    height: 145px;
+    float: left;
+    margin: 0px 20px 50px 0px;
+  }
+
+  .button p {
+    font-size: 30pt;
+  }
+
+  .footnote {
+    font-size: 9pt;
+  }
 }
