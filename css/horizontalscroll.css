@@ -13,7 +13,7 @@
 /*MOBILE*/
 #container .cover + div {
   color:#FFF;
-  padding: 10% 10% 10% 10%;
+  padding: 30px;
 }
 
 #container .box > div {
@@ -97,7 +97,7 @@
 
   #container .cover + div {
     color:#FFF;
-    padding: 10% 10% 10% 10%;
+    padding: 100px;;
     z-index: 3;
   }
 

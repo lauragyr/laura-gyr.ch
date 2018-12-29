@@ -8,7 +8,7 @@
 
 /* MOBILE*/
 .left {
-  padding: 30% 2% 10% 5%;
+  padding: 100px 20px 10px 20px;
   float: none;
   width: auto;
   display: block;
@@ -18,7 +18,22 @@
 .right {
   width: 100%;
   display: block;
-  padding: 2% 2% 10% 5%;
+  padding: 20px;
+}
+
+.right > h1 {
+  margin-bottom: 40px;
+}
+
+a {
+  font-family: Archia SemiBold;
+  font-size: 13pt;
+  color: #6102FA;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FADD02;
 }
 
 /* STYLES */
@@ -84,15 +99,14 @@ p {
 
 /* MOBILE*/
 .next {
-  height: 40vh;
-  padding: 10% 5% 10% 5%;
+  padding: 20px 20px 50px 20px;
   display: flex;
   justify-content: space-between;
 }
 
 /* MOBILE*/
 .next div:first-child {
-  width: 200px;
+  width: 150px;
   height: 130px;
   border: 5px solid #FADD02;
 }
@@ -121,9 +135,11 @@ p {
 }
 
 /* MOBILE*/
+
+
 .footer > div {
   width: 100%;
-  padding: 1% 2% 15% 5%;
+  padding: 10px 20px 10px 20px;
 }
 
 .footer > div > h3 {
@@ -137,21 +153,18 @@ p {
   line-height: 1.4;
 }
 
-.footer > div > p:nth-child(3) {
-  font-family: Archia SemiBold;
-}
+.footer > div > p:nth-child(3) { font-family: Archia SemiBold; }
 
-.footer > div > div {
- display: flex;
-}
+.footer > div > div { display: flex; }
 
 .footer > div > div > img {
   height: 40px;
-  margin-top: 30px;
+  margin: 30px 0px 20px 0px;
   padding-right: 10px;
 }
 
 
+/*MEDIA QUERIES*/
 @media only screen and (min-width: 678px) {
   .left {
     padding: 100px 10px 200px 100px;
@@ -166,33 +179,20 @@ p {
     padding: 300px 50px 0px 0px;
   }
 
-  h3 {
-    font-size: 30pt;
-  }
+  h3 { font-size: 30pt;}
 
-  h2 {
-    font-size: 60pt;
-  }
+  h2 { font-size: 60pt;}
 
-  h1 {
-    font-size: 30pt;
-  }
+  h1 { font-size: 30pt;}
 
-  .project {
-    padding: 100px;
-  }
+  .project { padding: 100px;}
 
-  .project > img {
-    padding-top: 70px;
-  }
+  .project > img { padding-top: 70px;}
 
-  .next {
-    height: 60vh;
-    padding: 70px 30px 0px 100px;
-  }
+  .next { padding: 70px 30px 100px 100px;}
 
   .next div:first-child {
-    width: 300px;
+    width: 250px;
     height: 200px;
   }
 
@@ -207,29 +207,25 @@ p {
   }
 }
 
-@media only screen and (max-width: 1220px) {
+@media only screen and (min-width: 560px) {
   .left {
-    padding: 10% 2% 2% 5%;
+    padding: 100px 50px 30px 50px;
     float: none;
     width: auto;
     display: block;
   }
 
-  /* MOBILE*/
+
   .right {
     width: 100%;
     display: block;
-    padding: 5% 2% 10% 5%;
+    padding: 50px;
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 920px) {
   .footer {
     display: block;
     justify-content: space-between;
-  }
-  
-  h3 {
-    font-size: 30pt;
   }
 }
