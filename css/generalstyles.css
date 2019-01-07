@@ -15,12 +15,12 @@
 }
 
 a {
-  width: 100%;
-  height: 100%;
+  width: inherit;
+  height: inherit;
   position: absolute;
 }
 
-.menubar {
+#menubar {
   height: 20px;
   width: 140px;
   position: fixed;
@@ -28,7 +28,7 @@ a {
   top: 30px;
 }
 
-.menucircle {
+#menucircle {
   height: 30px;
   width: 30px;
   border-radius: 50%;
