@@ -36,3 +36,8 @@ a {
   right: 190px;
   top: 25px;
 }
+
+::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+}
