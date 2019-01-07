@@ -30,15 +30,11 @@ a {
   font-size: 13pt;
   color: #6102FA;
   text-decoration: none;
+position: relative;
 }
 
-a:hover {
-  color: #FADD02;
-}
 
 /* STYLES */
-
-/* MOBILE*/
 h3 {
   font-family: Archia SemiBold;
   font-size: 20pt;
@@ -137,12 +133,12 @@ p {
 /* MOBILE*/
 
 
-.footer > div {
+.footer > div > a {
   width: 100%;
   padding: 10px 20px 10px 20px;
 }
 
-.footer > div > h3 {
+.footer > div > a {
   color: #FADD02;
   font-family: Archia SemiBold;
 }
