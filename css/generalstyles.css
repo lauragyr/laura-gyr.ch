@@ -20,6 +20,11 @@ a {
   position: absolute;
 }
 
+html
+{
+  scroll-behavior: smooth;
+}
+
 #menubar {
   height: 20px;
   width: 140px;
