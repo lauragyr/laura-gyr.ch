@@ -2,8 +2,29 @@
   background-color: #6102FA;
 }
 
+#menubarActive {
+  background-color: #6102FA;
+  transition: all 1s ease;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: fixed;
+}
+
 #menucircle {
   border: 5px solid #FADD02;
+}
+
+#menucircleActive {
+  border: 5px solid #FADD02;
+  background-color: #FFF;
+  transition: all 1s ease;
+  width: 150%;
+  height: 150%;
+  top: 0;
+  right: 0;
+  position: fixed;
 }
 
 /* MOBILE*/
@@ -21,7 +42,7 @@
   padding: 20px;
 }
 
-.right > h1 {
+.right>h1 {
   margin-bottom: 40px;
 }
 
@@ -35,7 +56,6 @@ a {
   color: #6102FA;
   text-decoration: none;
 }
-
 
 /* STYLES */
 h3 {
@@ -73,9 +93,7 @@ p {
   color: #A5A5A5;
 }
 
-
 /*  PROJECT   */
-
 /* MOBILE*/
 .project {
   clear: both;
@@ -84,7 +102,7 @@ p {
 }
 
 /* MOBILE*/
-.project > img {
+.project>img {
   padding-top: 30px;
   border-radius: 1%;
   backgroundcolor: #F2F2F2;
@@ -93,9 +111,7 @@ p {
   width: 100%;
 }
 
-
 /* NEXT PROJECT  */
-
 /* MOBILE*/
 .next {
   padding: 20px 20px 50px 20px;
@@ -110,19 +126,17 @@ p {
   border: 5px solid #FADD02;
 }
 
-
-.next div:first-child > h3 {
+.next div:first-child>h3 {
   color: #6102FA;
   text-align: right;
   padding: 10px;
 }
 
-.next > div:nth-child(2) {
+.next>div:nth-child(2) {
   height: 140px;
   width: 20px;
   background-color: #FADD02;
 }
-
 
 /*  FOOTER  */
 /* MOBILE*/
@@ -132,8 +146,7 @@ p {
   justify-content: flex-end;
 }
 
-
-.footer  p {
+.footer p {
   color: #FADD02;
   padding-top: 20px;
   line-height: 1.4;
@@ -145,18 +158,16 @@ p {
   font-family: Archia SemiBold;
 }
 
-.footer > div {
+.footer>div {
   padding: 15px;
 }
 
-
-.footer a > img {
+.footer a>img {
   height: 30px;
   margin: 30px 0px 20px 0px;
   padding-right: 8px;
   color: black;
 }
-
 
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 678px) {
@@ -173,17 +184,29 @@ p {
     padding: 300px 50px 0px 0px;
   }
 
-  h3 { font-size: 30pt;}
+  h3 {
+    font-size: 30pt;
+  }
 
-  h2 { font-size: 60pt;}
+  h2 {
+    font-size: 60pt;
+  }
 
-  h1 { font-size: 30pt;}
+  h1 {
+    font-size: 30pt;
+  }
 
-  .project { padding: 100px;}
+  .project {
+    padding: 100px;
+  }
 
-  .project > img { padding-top: 70px;}
+  .project>img {
+    padding-top: 70px;
+  }
 
-  .next { padding: 70px 30px 100px 100px;}
+  .next {
+    padding: 70px 30px 100px 100px;
+  }
 
   .next div:first-child {
     width: 250px;
@@ -195,12 +218,12 @@ p {
     justify-content: space-between;
   }
 
-  .footer > div {
+  .footer>div {
     width: 500px;
   }
 }
 
-.footer > div:nth-child(3), .footer > div:nth-child(4) {
+.footer>div:nth-child(3), .footer>div:nth-child(4) {
   padding-top: 15px;
 }
 

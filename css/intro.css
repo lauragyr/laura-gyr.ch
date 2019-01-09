@@ -33,13 +33,14 @@ position: fixed;
 p {
   font-family: Archia SemiBold;
   font-size: 50pt;
-  color: #FADD02;
+  color: #A5A5A5;
   padding: 200px 0px 0px 100px;
+  position: absolute;
 }
 
 /*MEDIAQUERIES*/
 @media only screen and (min-width: 678px) {
   p {
-    font-size: 70pt;
+    font-size: 50pt;
   }
 }

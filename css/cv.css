@@ -1,9 +1,26 @@
 body {
   background-color: #6102FA;
+
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in;
+  -moz-transition: opacity 1s ease-in;
+  -o-transition: opacity 1s ease-in;
+  -ms-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
 }
 
 #menubar {
 background-color: #FFF;
+}
+
+#menubarActive {
+background-color: #FFF;
+transition:all 1s ease;
+width: 100%;
+height: 100%;
+top: 0;
+right: 0;
+position: fixed;
 }
 
 /* MOBILE*/
