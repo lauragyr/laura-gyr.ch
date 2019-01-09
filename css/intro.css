@@ -1,15 +1,24 @@
+body {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in;
+  -moz-transition: opacity 1s ease-in;
+  -o-transition: opacity 1s ease-in;
+  -ms-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+}
+
 #menubar {
-background-color: #6102FA;
+  background-color: #6102FA;
 }
 
 #menubarActive {
-background-color: #6102FA;
-transition:all 1s ease;
-width: 100%;
-height: 100%;
-top: 0;
-right: 0;
-position: fixed;
+  background-color: #6102FA;
+  transition: all 1s ease;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: fixed;
 }
 
 .intro {
@@ -37,6 +46,77 @@ p {
   padding: 200px 0px 0px 100px;
   position: absolute;
 }
+
+/*INTRO-ANIMATION*/
+body,
+html,.wrap {
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+.wrap {
+  background: inherit;
+  animation: 7s spin ease-in-out infinite;
+}
+
+.meta:before,
+.meta:after {
+  content: "";
+  position: absolute;
+  width:100px;
+  height:100px;
+  left:50%;
+  top:50%;
+  margin:-50px;
+  background: rgba(250,221,2,.9);
+  border-radius:50%;
+  -webkit-filter: blur(25px);
+  filter: blur(25px);
+  animation: move 12s infinite alternate ease-in-out;
+}
+.meta:before {
+  animation-duration: 19.3s;
+  animation-delay: -3.3s;
+}
+.meta:nth-child(2):before {
+  animation-duration: 14.7s;
+  animation-delay: -2.7s;
+}
+.meta:nth-child(2):after {
+  animation-duration: 8.7s;
+  animation-delay: -5.32s;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg)
+  }
+}
+@keyframes move {
+  0% {
+    transform: translate(0%, 100%);
+  }
+  15% {
+    transform: translate(-120%, 160%);
+  }
+  30% {
+    transform: translate(100%, -80%);
+  }
+  40% {
+    transform: translate(-140%, 0%);
+  }
+  60% {
+    transform: translate(40%, -80%);
+  }
+  80% {
+    transform: translate(-160%, -20%);
+  }
+  100% {
+    transform: translate(40%, 60%);
+  }
+}
+}
+
 
 /*MEDIAQUERIES*/
 @media only screen and (min-width: 678px) {

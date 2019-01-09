@@ -1,5 +1,4 @@
 /*   CONTAINERS   */
-/*MOBILE*/
 #container {
   overflow-y: hidden;
   overflow-x: hidden;
@@ -45,7 +44,7 @@
   position: absolute;
 }
 
-.cover, .box, .info{ position:absolute; }
+.cover, .box, .info { position:absolute; }
 
 .info{
   z-index:10;
