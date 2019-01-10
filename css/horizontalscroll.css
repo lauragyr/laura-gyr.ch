@@ -6,6 +6,8 @@
   transform-origin: top left;
   width:100vw;
   height: auto;
+  z-index: -1;
+  position:absolute;
 }
 
 /*MOBILE*/
@@ -103,6 +105,11 @@
     display:inline-block;
     margin: 0 ;
     margin-bottom: 0px;
+  }
+
+  .info {
+    width:calc(100% - 200px);
+    height:calc(100% - 200px);
   }
 
   #container .cover + div {
