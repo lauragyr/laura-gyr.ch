@@ -23,17 +23,22 @@ body {
 
 #menucircle {
   border: 5px solid #FADD02;
+  transform: scale(1.0);
 }
 
 #menucircleActive {
-  border: 5px solid #FADD02;
+  border: 10px solid #FADD02;
   background-color: #FFF;
-  transition: all 1s ease;
+  border-radius: 100%;
+  transition: all 1s ease-in-out;
   width: 150%;
   height: 150%;
-  top: 0;
-  right: 0;
   position: fixed;
+  transform: scale(100);
+  top: 50%;
+  right: 50%;
+
+
 }
 
 /* MOBILE*/

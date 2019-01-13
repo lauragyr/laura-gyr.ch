@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="css/projects.css">
 </head>
 
-<body onload="document.body.style.opacity='1'">
+<body id="top" onload="document.body.style.opacity='1'">
   <div id="menubar" onclick="switchViolet()"></div>
   <div id="menucircle" onclick="switchCircle()"></div>
 
@@ -44,7 +44,9 @@
     <a href="proj_bees.html"> </a>
     <h3>next project<br>>></h3>
   </div>
-  <div></div>
+  <div>
+    <a href="#top" onclick="scrollToTop();return false"></a>
+  </div>
 </div>
 
 <div class="footer">
@@ -54,7 +56,7 @@
     <p>what do I do for a living?</p>
   </div>
   <div>
-    <a href="index.html"><h3>projects</h3></a>
+    <a href="index.html#containerscroll"><h3>projects</h3></a>
     <p>I’m a graphic designer with a bachelors degree in visual communication digital ideation. you’re wondering what that is?</p>
   </div>
   <div>

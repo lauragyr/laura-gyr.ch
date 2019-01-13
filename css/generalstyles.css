@@ -36,7 +36,7 @@ html
 #menucircle {
   height: 30px;
   width: 30px;
-  border-radius: 50%;
+  border-radius: 100%;
   position: fixed;
   right: 190px;
   top: 25px;
