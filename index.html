@@ -9,17 +9,19 @@
 	<link rel="stylesheet" type="text/css" href="css/generalstyles.css">
 	<link rel="stylesheet" type="text/css" href="css/horizontalscroll.css">
 	<link rel="stylesheet" type="text/css" href="css/intro.css">
+	<link rel="stylesheet" type="text/css" href="plugins/fullpage.css">
 </head>
 
 <body onload="document.body.style.opacity='1'">
-	<div class="intro">
+	<div id="fullpage">
+	<div class="intro section">
 		<div id="menubar" onclick="switchViolet()"></div>
 		<p>hej there!</p>
 		<div id="scroll">
 			<h3>scroll</h3>
 		</div>
 	</div>
-	<div id="container">
+	<div id="container" class="section">
 		<div id="containerscroll">
 
 			<div class="boxwrapper" id="box1">
@@ -72,10 +74,12 @@
 
 		</div>
 	</div>
-
+</div>
 
 	<!--<script src="js/scroll.js" type="text/javascript"></script>-->
 	<script src="js/menu-animation.js" type="text/javascript"></script>
+	<script src="plugins/fullpage.js" type="text/javascript"></script>
+
 </body>
 
 </html>

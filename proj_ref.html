@@ -8,71 +8,73 @@
 
   <link rel="stylesheet" type="text/css" href="css/generalstyles.css">
   <link rel="stylesheet" type="text/css" href="css/projects.css">
+  <link rel="stylesheet" type="text/css" href="plugins/animate.css">
 </head>
 
 <body id="top" onload="document.body.style.opacity='1'">
   <div id="menubar" onclick="switchViolet()"></div>
   <div id="menucircle" onclick="switchCircle()"></div>
 
-    <div class="left">
-      <h3>– 2018</h3>
-      <h2>Refugees in Europe</h2>
-      <div class="facts">
-        <p class="bold">type of project:</p>
-        <p>data visualization</p>
-      </div>
-      <div class="facts">
-        <p class="bold">techniques:</p>
-        <p>HTML, CSS, JS | Illustrator</p>
-      </div>
+  <div class="left">
+    <h3>– 2018</h3>
+    <h2>Refugees in Europe</h2>
+    <div class="facts">
+      <p class="bold">type of project:</p>
+      <p>data visualization</p>
     </div>
+    <div class="facts">
+      <p class="bold">techniques:</p>
+      <p>HTML, CSS, JS | Illustrator</p>
     </div>
-    <div class="right">
-      <h1>How does the number of refugees compare to the number of citizens in each European country, and where did they come from?</h1>
-      <a href="http://yaay.ch/refugees-in-europe/" target="_blank">check out project</a>
-    </div>
+  </div>
+  </div>
+  <div class="right">
+    <h1>How does the number of refugees compare to the number of citizens in each European country, and where did they
+      come from?</h1>
+    <a href="http://yaay.ch/refugees-in-europe/" target="_blank">check out project</a>
+  </div>
 
 
-    <div class="project">
-      <img src="assets/projects/Ref1.png">
-      <img src="assets/projects/Ref3.png">
-      <img src="assets/projects/Ref2.png">
+  <div class="project">
+    <img class="wow slideInUp" src="assets/projects/Ref1.png">
+    <img class="wow slideInUp" src="assets/projects/Ref3.png">
+    <img class="wow slideInUp" src="assets/projects/Ref2.png">
+  </div>
+
+  <div class="next">
+    <div class="wow slideInUp">
+      <a href="proj_bees.html"> </a>
+      <h3>next project<br>>></h3>
     </div>
-
-<div class="next">
-  <div>
-    <a href="proj_bees.html"> </a>
-    <h3>next project<br>>></h3>
-  </div>
-  <div>
-    <a href="#top" onclick="scrollToTop();return false"></a>
-  </div>
-</div>
-
-<div class="footer">
-  <div></div>
-  <div>
-    <a href="about.html"><h3>about</h3></a>
-    <p>what do I do for a living?</p>
-  </div>
-  <div>
-    <a href="index.html#containerscroll"><h3>projects</h3></a>
-    <p>I’m a graphic designer with a bachelors degree in visual communication digital ideation. you’re wondering what that is?</p>
-  </div>
-  <div>
-    <h3>contact</h3>
-    <p>find me on social media or write me an email. I’d love to work with you!</p>
     <div>
-      <a href="mailto:hej@laura-gyr.ch"><img src="assets/icons/mail.png"></a>
-      <a href="https://www.instagram.com/lauragyr/"><img src="assets/icons/social-insta.png"></a>
-      <a href="https://github.com/lauragyr"><img src="assets/icons/social-github.png"></a>
-      <a href="https://twitter.com/loerih?lang=en"><img src="assets/icons/social-twitter.png"></a>
-      <a href="https://www.behance.net/lauragyra1b8"><img src="assets/icons/social-behance.png"></a>
+      <a href="#top" onclick="scrollToTop(); return:false;"></a>
     </div>
   </div>
-</div>
 
-<script src="js/menu-animation.js" type="text/javascript"></script>
+  <div class="footer">
+    <div>
+      <a href="about.html">
+        <h3>about</h3>
+      </a>
+      <a href="index.html#containerscroll">
+        <h3>projects</h3>
+      </a>
+      <a href="mailto:hej@laura-gyr.ch">
+        <h3>contact</h3>
+      </a>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/lauragyr/" target="_blank"><img src="assets/icons/social-insta.png"></a>
+      <a href="https://github.com/lauragyr" target="_blank"><img src="assets/icons/social-github.png"></a>
+      <a href="https://www.behance.net/lauragyra1b8" target="_blank"><img src="assets/icons/social-behance.png"></a>
+    </div>
+  </div>
+
+  <script src="js/menu-animation.js" type="text/javascript"></script>
+  <script src="js/scroll.js" type="text/javascript"></script>
+  <script src="plugins/wow.min.js" type="text/javascript"></script>
+  <script>new WOW().init();</script>
+
 </body>
 
 </html>

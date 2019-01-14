@@ -1,5 +1,6 @@
 body {
   background-color: #6102FA;
+  z-index: 4;
 
   opacity: 0;
   -webkit-transition: opacity 1s ease-in;

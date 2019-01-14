@@ -1,4 +1,6 @@
-body {
+/* MOBILE FIRST BITCHES */
+
+.body {
   opacity: 0;
   -webkit-transition: opacity 1s ease-in;
   -moz-transition: opacity 1s ease-in;
@@ -37,11 +39,8 @@ body {
   transform: scale(100);
   top: 50%;
   right: 50%;
-
-
 }
 
-/* MOBILE*/
 .left {
   padding: 100px 20px 10px 20px;
   float: none;
@@ -49,7 +48,6 @@ body {
   display: block;
 }
 
-/* MOBILE*/
 .right {
   width: 100%;
   display: block;
@@ -62,6 +60,7 @@ body {
 
 .right a {
   width: auto;
+  z-index: -1;
 }
 
 a {
@@ -78,7 +77,6 @@ h3 {
   color: #FADD02;
 }
 
-/* MOBILE*/
 h2 {
   font-family: Archia SemiBold;
   font-size: 50pt;
@@ -86,7 +84,6 @@ h2 {
   color: #A5A5A5;
 }
 
-/* MOBILE*/
 h1 {
   font-family: Archia Light;
   font-size: 25pt;
@@ -108,32 +105,28 @@ p {
 }
 
 /*  PROJECT   */
-/* MOBILE*/
 .project {
   clear: both;
   background-color: #F2F2F2;
   padding: 20px;
 }
 
-/* MOBILE*/
 .project>img {
   padding-top: 30px;
   border-radius: 1%;
-  backgroundcolor: #F2F2F2;
+  background-color: #F2F2F2;
   display: block;
   margin: auto;
   width: 100%;
 }
 
 /* NEXT PROJECT  */
-/* MOBILE*/
 .next {
   padding: 20px 20px 50px 20px;
   display: flex;
   justify-content: space-between;
 }
 
-/* MOBILE*/
 .next div:first-child {
   width: 150px;
   height: 130px;
@@ -153,17 +146,10 @@ p {
 }
 
 /*  FOOTER  */
-/* MOBILE*/
 .footer {
   background-color: #6102FA;
   display: block;
   justify-content: flex-end;
-}
-
-.footer p {
-  color: #FADD02;
-  padding-top: 20px;
-  line-height: 1.4;
 }
 
 .footer a {
@@ -183,6 +169,7 @@ p {
   color: black;
 }
 
+
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 678px) {
   .left {
@@ -198,47 +185,29 @@ p {
     padding: 300px 50px 0px 0px;
   }
 
-  h3 {
-    font-size: 30pt;
-  }
+  h3 { font-size: 20pt; }
 
-  h2 {
-    font-size: 60pt;
-  }
+  h2 { font-size: 60pt; }
 
-  h1 {
-    font-size: 30pt;
-  }
+  h1 { font-size: 30pt; }
 
-  .project {
-    padding: 100px;
-  }
+  .project { padding: 100px; }
 
-  .project>img {
-    padding-top: 70px;
-  }
+  .project>img { padding-top: 70px; }
 
-  .next {
-    padding: 70px 30px 100px 100px;
-  }
+  .next { padding: 70px 30px 100px 100px; }
 
   .next div:first-child {
     width: 250px;
     height: 200px;
   }
 
+  .next h3 { font-size: 30pt; } 
+
   .footer {
     display: flex;
     justify-content: space-between;
   }
-
-  .footer>div {
-    width: 500px;
-  }
-}
-
-.footer>div:nth-child(3), .footer>div:nth-child(4) {
-  padding-top: 15px;
 }
 
 @media only screen and (min-width: 560px) {
@@ -256,7 +225,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 678px) {
   .footer {
     display: block;
     justify-content: space-between;
