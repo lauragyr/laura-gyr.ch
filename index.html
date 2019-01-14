@@ -10,18 +10,27 @@
 	<link rel="stylesheet" type="text/css" href="css/horizontalscroll.css">
 	<link rel="stylesheet" type="text/css" href="css/intro.css">
 	<link rel="stylesheet" type="text/css" href="plugins/fullpage.css">
+	<link rel="stylesheet" type="text/css" href="plugins/animate.css">
 </head>
 
 <body onload="document.body.style.opacity='1'">
-	<div id="fullpage">
-	<div class="intro section">
+	<div class="intro">
 		<div id="menubar" onclick="switchViolet()"></div>
-		<p>hej there!</p>
+		<p class="wow slideInUp">hej there!</p>
+		<div id="animation">
+		<svg onload="document.body.style.opacity='1'" id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" width="663" height="686" viewBox="0 0 663 686">
+			<circle cx="315" cy="355" r="267" fill="#fadd02" stroke="#fff" stroke-miterlimit="10" stroke-width="8"/>
+		  </svg>
+		  <svg onload="document.body.style.opacity='1'" id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" width="500" height="686" viewBox="0 0 663 686">
+			<circle cx="315" cy="355" r="267" fill="#fadd02" stroke="#fff" stroke-miterlimit="10" stroke-width="8"/>
+		  </svg>
+		</div>
+		  
 		<div id="scroll">
 			<h3>scroll</h3>
 		</div>
 	</div>
-	<div id="container" class="section">
+	<div id="container">
 		<div id="containerscroll">
 
 			<div class="boxwrapper" id="box1">
@@ -74,12 +83,12 @@
 
 		</div>
 	</div>
-</div>
 
 	<!--<script src="js/scroll.js" type="text/javascript"></script>-->
 	<script src="js/menu-animation.js" type="text/javascript"></script>
 	<script src="plugins/fullpage.js" type="text/javascript"></script>
-
+	<script src="plugins/wow.min.js" type="text/javascript"></script>
+	<script>new WOW().init();</script>
 </body>
 
 </html>

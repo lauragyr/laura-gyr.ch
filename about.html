@@ -7,25 +7,28 @@
 	<title>laura-gyr.ch // about me</title>
 
 	<link rel="stylesheet" type="text/css" href="css/generalstyles.css">
-	<link rel="stylesheet" type="text/css" href="css/cv.css">
+  <link rel="stylesheet" type="text/css" href="css/cv.css">
+  <link rel="stylesheet" type="text/css" href="plugins/animate.css">
 </head>
 
 <body onload="document.body.style.opacity='1'">
 <div id="menubar" onclick="switchWhite()"></div>
-<div class="about">
+<div class="about wow slideInUp">
   <h3>I'm laura, a digital ideation student who's passionate about technology, animation and typography. My work is very wide-spread when it comes to TOPIC and technology.</h3>
-  <div class="button cv">
+  <div class="button cv wow slideInUp">
     <p>see my CV<br>>></p>
   </div>
-  <div class="button mail">
+  <div class="button mail wow slideInUp">
 		<a href="mailto:hej@laura-gyr.ch"></a>
     <p>email me<br>>></p>
   </div>
-  <div class="footnote">
+  <div class="footnote wow slideInUp">
     <p><span>concept, design and code</span> of this website by myself</p>
   </div>
 </div>
 
-			<script src="js/menu-animation.js" type="text/javascript"></script>
+      <script src="js/menu-animation.js" type="text/javascript"></script>
+      <script src="plugins/wow.min.js" type="text/javascript"></script>
+      <script>new WOW().init();</script>
 </body>
 </html>

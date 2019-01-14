@@ -23,12 +23,12 @@ body {
 
 .intro {
   height: 100vh;
+  overflow: hidden;
 }
 
 .intro h3 {
   font-family: Archia SemiBold;
   color: #A5A5A5;
-  /*#F7F5F5;*/
 }
 
 #scroll {
@@ -47,6 +47,27 @@ p {
   padding: 200px 0px 0px 100px;
   position: absolute;
   z-index: -1;
+}
+
+
+/* INTRO ANIMATION */
+#animation {
+  z-index: -2;
+  position: relative;
+  display: flex;
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin { 
+  from { 
+      transform: rotate(0deg); 
+  } to { 
+      transform: rotate(360deg); 
+  }
+}
 }
 
 
