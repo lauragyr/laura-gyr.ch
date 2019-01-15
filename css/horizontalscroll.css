@@ -119,7 +119,7 @@
 
   #container {
     overflow-y:scroll;
-    overflow-x:hidden;
+    overflow-x:scroll;
     transform: rotate(-90deg) translateX(-100%);
     transform-origin: top left;
     width:100vh;
