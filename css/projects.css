@@ -192,7 +192,6 @@ p { font-family: Archia Light; }
     padding: 100px 10px 200px 100px;
     float: left;
     width: 40%;
-    display: inline-block;
   }
 
   .right {
