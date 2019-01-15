@@ -166,7 +166,28 @@ p {
   height: 30px;
   margin: 30px 0px 20px 0px;
   padding-right: 8px;
-  color: black;
+}
+
+/* LABEL SWITCH FOOTER */
+.item1 .new-label span, .item2 .new-label span, .item3 .new-label span {
+  position: relative;
+}
+.item1:hover .new-label span, .item2:hover .new-label span, .item3:hover .new-label span {
+  display: none;
+}
+.item1:hover .new-label:after, .item1:active .new-label:after {
+  content: 'laura gyr';
+  color: #3D00B2;
+}
+
+.item2:hover .new-label:after, .item2:active .new-label:after {
+  content: 'my portfolio';
+  color: #3D00B2;
+}
+
+.item3:hover .new-label:after, .item3:active .new-label:after{
+  content: 'email me';
+  color: #3D00B2;
 }
 
 
