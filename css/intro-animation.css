@@ -1,0 +1,126 @@
+/* INTRO ANIMATION */
+#animation { 
+    z-index: -2;
+    position: relative;
+    width: 100vw;
+    animation-duration: 100s;
+    animation-delay: 2s;
+  }
+  
+  .bubble-1 {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    animation: move 12s infinite alternate ease-in-out;
+  }
+
+  .bubble-2 {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+  }
+
+  .bubble-3 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  .bubble-4 {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    position: absolute;
+    animation-delay: 3s;
+    animation: startscale 2s ease;
+
+    /*animation: move 12s infinite alternate ease-in-out;*/
+  }
+
+  .filled-yellow {
+    background-color: #FADD02;
+    animation: move 12s infinite alternate ease-in-out;
+  }
+
+  .filled-violet {
+    background-color: #6102FA;
+    animation: move 12s infinite alternate ease-in-out;
+  }
+
+  /* wenn gehovert, werden bubbles grösser*/
+  .filled-yellow:hover {
+      transform: scale(2);
+  }
+
+  .outline-yellow {
+      border: 5px solid #FADD02;
+  }
+
+
+#animation {
+  animation: 7s spin ease-in-out infinite;
+}
+  
+
+.filled-yellow:before {
+  animation-duration: 19.3s;
+  animation-delay: -3.3s;
+}
+.filled-yellow:nth-child(2):before {
+  animation-duration: 14.7s;
+  animation-delay: -2.7s;
+}
+.filled-yellow:nth-child(2):after {
+  animation-duration: 8.7s;
+  animation-delay: -5.32s;
+}
+
+  /* KEYFRAMES */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+  
+@keyframes startscale {
+    0% {
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      transform: scale(0);
+    }
+    
+    100% {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes infinite-rotation {
+    from {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes move {
+    0% {
+      transform: translate(0%, 0%);}
+    30% {
+      transform: translate(0%, 80%);
+    }
+    60% {
+      transform: translate(40%, 80%);
+    }
+    80% {
+      transform: translate(160%, -20%);
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
