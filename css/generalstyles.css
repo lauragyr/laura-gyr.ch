@@ -9,6 +9,19 @@
   src: url("../assets/fonts/archia-semibold-webfont.woff");
 }
 
+
+  /* RESET TAGS */
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+      vertical-align: baseline;
+      font-weight: normal;
+  }
+
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -36,7 +49,7 @@ html {
 #menucircle {
   height: 30px;
   width: 30px;
-  border-radius: 100%;
+  border-radius: 50%;
   position: fixed;
   right: 190px;
   top: 25px;
