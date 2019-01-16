@@ -251,7 +251,8 @@
             if(options.autoScrolling && !options.scrollBar){
                 css($htmlBody, {
                     'overflow': 'hidden',
-                    'height': '100%'
+                    'height': 'calc(100% - 200px)';
+                    
                 });
 
                 setRecordHistory(originals.recordHistory, 'internal');
@@ -270,7 +271,7 @@
             }else{
                 css($htmlBody, {
                     'overflow' : 'visible',
-                    'height' : 'initial'
+                    'height' : 'calc(100% - 200px)'
                 });
 
                 setRecordHistory(false, 'internal');
@@ -733,7 +734,7 @@
         */
         function prepareDom(){
             css(container, {
-                'height': '100%',
+                'height': 'calc(100% - 200px)',
                 'position': 'relative'
             });
 
