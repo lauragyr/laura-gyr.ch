@@ -201,5 +201,3 @@ function scrollToTop() {
 	}
 	else clearTimeout(timeOut);
 }
-
-//SMOOTH SCROLL TO CONTAINER
