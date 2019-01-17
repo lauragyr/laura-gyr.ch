@@ -32,10 +32,10 @@
 #menucircleActive {
   background-color: #FFF;
   border: 1px solid #FADD02;
-  width: 200%;
-  height: 200%;
+  width: 200vw;
+  height: 200vw;
   position: fixed;
-  transform: scale(100, 120);
+  transform: scale(100, 100);
   top: 50%;
   right: 50%;
   transition: all 3.5s ease-in-out, background-color 1s ease;
@@ -51,7 +51,7 @@
 .right {
   width: 100%;
   display: block;
-  padding: 20px;
+  padding: 20px 20px 60px 20px;
 }
 
 .right>h1 {
