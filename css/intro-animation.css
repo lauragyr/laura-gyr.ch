@@ -11,15 +11,43 @@
   border-radius: 50%;
   }
 
+
+  @keyframes circle {
+    from {
+      transform: scale(0)
+    }
+    to {
+      transform: scale(6)
+    }
+  }
+  .bg {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border: 8px solid #F2F2F2;
+    border-radius: 50%;
+    position: absolute; /*Wenn absolute, kommen sie ineander*/
+    top: 80%;
+    left: 32%;
+    z-index: -2;
+  }
+  .first {
+    animation: circle 7s infinite linear;
+  }
+  .second {
+    animation: circle 6s infinite linear;
+  }
+  .third {
+    animation: circle 5s infinite linear;
+  }
+
   /* verschiedene circles */
 .uno {
   width: 500px;
   height: 500px;
   background-color: #FADD02;
-  /*animation: 20s move 10s infinite ease-in-out, circle 4s ease;*/
-  animation: 3s startscale 0s ease, 10s intro 20s infinite ease-in-out;
+  animation: 3s startscale 0s ease, 10s intro 5s infinite ease-in-out;
   margin-top: 5%;
-
 }
 
 .due {
@@ -33,16 +61,16 @@
 .tre {
   width: 200px;
   height: 200px;
-  margin: -30% 0% 0% 60%;
-  animation: startscale 5s ease;
+  margin: -35% 0% 0% 4%;
+  animation: startscale 5s ease, 10s intro 5.5s infinite ease-in-out;
   background-color: #FADD02;
 }
 
 .quattro {
   width: 300px;
   height: 300px;
-  margin: -45% 0% 0% 70%;
-  animation: startscale 5s ease;
+  margin: -4% 0% 0% 57%;
+  animation: startscale 5s ease, 10s intro 6s infinite ease-in-out;
   background-color: #FADD02;
 }
 
@@ -54,15 +82,15 @@
   border: 15px solid #FADD02;
 }
 
-.circle::before {
+.circle:before {
   animation-duration: 19.3s;
   animation-delay: -3.3s;
 }
-.circle.uno::before {
+.circle.due:before {
   animation-duration: 14.7s;
   animation-delay: -2.7s;
 }
-.circle.uno::after {
+.circle.due:after {
   animation-duration: 8.7s;
   animation-delay: -5.32s;
 }
@@ -83,7 +111,7 @@
       transform: scale(1);
     }
 }
-/*
+
 @keyframes rot {
     0% {
       -webkit-transform: rotate(0deg);
@@ -91,9 +119,9 @@
       transform: rotate(0deg);
     }
     50% {
-      -webkit-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      transform: rotate(180deg);
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     60% {
       -webkit-transform: rotate(180deg);
@@ -107,7 +135,6 @@
       transform: rotate(50deg);
     }
 }
-*/
 
 @keyframes intro {
   0% {
@@ -127,7 +154,7 @@
   80% {
     transform: translate(160%, -20%);
   }
-  100% {
+  99% {
     transform: translate(0%, 0%);
   }
 }
