@@ -86,17 +86,16 @@
 
 
 /*   BOX-STYLE   */
-/*MOBILE*/
 .info h3 {
   font-family: Archia SemiBold;
   font-size: 16pt;
 }
 
-/*MOBILE*/
 .info h2 {
   font-family: Archia SemiBold;
   font-size: 30pt;
 }
+
 
 
 
@@ -164,4 +163,12 @@
   .info h3 { font-size: 30pt; }
 
   .info h2 { font-size: 70pt; }
+
+  .boxwrapper:hover .info {
+  color: transparent;
+  }
+
+  .boxwrapper:hover .box {
+  opacity: 0.0;
+  }
 }
