@@ -16,16 +16,16 @@
 <body>
 	<div id="menubar" onclick="switchViolet()"></div>
 	<div id="fullpage">
-		<div class="intro section">
+		<div id="intro" class="section">
 			<p>hej there!</p>
-			<div class="bubble-4 outline-yellow"></div>
+			<div id="animation">
+			<div class="circle uno"></div>
+			<div class="circle due"></div>
+			<div class="circle tre"></div>
+			<div class="circle quattro"></div>
+			<div class="circle cinque"></div>
+		</div>
 
-			<!--<div id="animation">
-					<div class="bubble-1 filled-yellow"></div>
-					<div class="bubble-2 filled-yellow"></div>
-					<div class="bubble-3 outline-yellow"></div>
-
-			</div>-->
 
 			<div id="scroll">
 				<h3>scroll</h3>
@@ -98,10 +98,11 @@
 			scrollHorizontally: true,
 		});
 
-		var element = document.getElementById('container');
+		var element1 = document.getElementById('container');
+		var element2 = document.getElementById('intro');
 
-		element.style.height = null;
-		element.style.height = null;
+		element1.style.height = null;
+		element2.style.height = null;
 	</script>
 </body>
 

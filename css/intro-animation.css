@@ -1,86 +1,75 @@
 /* INTRO ANIMATION */
 #animation { 
-    z-index: -2;
-    position: relative;
-    width: 100vw;
-    animation-duration: 100s;
-    animation-delay: 2s;
+  z-index: -2;
+  position: relative;
+  width: 100vw;
   }
   
-  .bubble-1 {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    animation: move 12s infinite alternate ease-in-out;
+.circle {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
   }
 
-  .bubble-2 {
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-  }
+  /* verschiedene circles */
+.uno {
+  width: 500px;
+  height: 500px;
+  background-color: #FADD02;
+  /*animation: 20s move 10s infinite ease-in-out, circle 4s ease;*/
+  animation: 3s startscale 0s ease, 10s intro 20s infinite ease-in-out;
+  margin-top: 5%;
 
-  .bubble-3 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-  }
-
-  .bubble-4 {
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    position: absolute;
-    animation-delay: 3s;
-    animation: startscale 2s ease;
-
-    /*animation: move 12s infinite alternate ease-in-out;*/
-  }
-
-  .filled-yellow {
-    background-color: #FADD02;
-    animation: move 12s infinite alternate ease-in-out;
-  }
-
-  .filled-violet {
-    background-color: #6102FA;
-    animation: move 12s infinite alternate ease-in-out;
-  }
-
-  /* wenn gehovert, werden bubbles grösser*/
-  .filled-yellow:hover {
-      transform: scale(2);
-  }
-
-  .outline-yellow {
-      border: 5px solid #FADD02;
-  }
-
-
-#animation {
-  animation: 7s spin ease-in-out infinite;
 }
-  
 
-.filled-yellow:before {
+.due {
+  width: 300px;
+  height: 300px;
+  margin: -18% 0% 0% 14%;
+  animation: startscale 5s ease;
+  border: 15px solid #FADD02;
+}
+
+.tre {
+  width: 200px;
+  height: 200px;
+  margin: -30% 0% 0% 60%;
+  animation: startscale 5s ease;
+  background-color: #FADD02;
+}
+
+.quattro {
+  width: 300px;
+  height: 300px;
+  margin: -45% 0% 0% 70%;
+  animation: startscale 5s ease;
+  background-color: #FADD02;
+}
+
+.cinque {
+  width: 400px;
+  height: 400px;
+  margin: -10% 0% 0% 65%;
+  animation: startscale 5s ease;
+  border: 15px solid #FADD02;
+}
+
+.circle::before {
   animation-duration: 19.3s;
   animation-delay: -3.3s;
 }
-.filled-yellow:nth-child(2):before {
+.circle.uno::before {
   animation-duration: 14.7s;
   animation-delay: -2.7s;
 }
-.filled-yellow:nth-child(2):after {
+.circle.uno::after {
   animation-duration: 8.7s;
   animation-delay: -5.32s;
 }
 
-  /* KEYFRAMES */
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
 
-  
+
+/* KEYFRAMES */
 @keyframes startscale {
     0% {
       -webkit-transform: scale(0);
@@ -93,34 +82,52 @@
       -moz-transform: scale(1);
       transform: scale(1);
     }
-  }
-  
-  @keyframes infinite-rotation {
-    from {
+}
+/*
+@keyframes rot {
+    0% {
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
       transform: rotate(0deg);
     }
-    to {
-      -webkit-transform: rotate(360deg);
-      -moz-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-
-  @keyframes move {
-    0% {
-      transform: translate(0%, 0%);}
-    30% {
-      transform: translate(0%, 80%);
+    50% {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      transform: rotate(180deg);
     }
     60% {
-      transform: translate(40%, 80%);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      transform: rotate(180deg);
     }
-    80% {
-      transform: translate(160%, -20%);
-    }
+
     100% {
-      transform: translate(0%, 0%);
+      -webkit-transform: rotate(50deg);
+      -moz-transform: rotate(50deg);
+      transform: rotate(50deg);
     }
+}
+*/
+
+@keyframes intro {
+  0% {
+    transform: translate(0%, 0%);
   }
+
+  10% {
+    transform: translate(30%, 80%);
+    transform: rotate(50deg);
+  }
+  30% {
+    transform: translate(0%, 80%);
+  }
+  60% {
+    transform: translate(40%, 80%);
+  }
+  80% {
+    transform: translate(160%, -20%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
