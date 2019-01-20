@@ -10,6 +10,11 @@
 
 #menubar {
   background-color: #6102FA;
+  transition: transform ease 0.5s;
+}
+
+#menubar:hover {
+  transform: scale(1.1);
 }
 
 #menubarActive {
