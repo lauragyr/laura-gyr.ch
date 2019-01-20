@@ -11,34 +11,27 @@
   border-radius: 50%;
   }
 
-
-  @keyframes circle {
-    from {
-      transform: scale(0)
-    }
-    to {
-      transform: scale(6)
-    }
-  }
   .bg {
     margin: 0 auto;
     width: 300px;
     height: 300px;
     border: 8px solid #F2F2F2;
     border-radius: 50%;
-    position: absolute; /*Wenn absolute, kommen sie ineander*/
-    top: 80%;
-    left: 32%;
+    position: absolute;
+    top: 20%;
+    left: 36.5%;
     z-index: -2;
+    filter: blur(2px);
   }
+
   .first {
-    animation: circle 7s infinite linear;
+    animation: circle-bg 7s infinite linear, startscale 5s ease-in-out;
   }
   .second {
-    animation: circle 6s infinite linear;
+    animation: circle-bg 6s infinite linear, startscale 5s ease-in-out;
   }
   .third {
-    animation: circle 5s infinite linear;
+    animation: circle-bg 5s infinite linear, startscale 5s ease-in-out;
   }
 
   /* verschiedene circles */
@@ -51,36 +44,21 @@
 }
 
 .due {
-  width: 300px;
-  height: 300px;
-  margin: -18% 0% 0% 14%;
-  animation: startscale 5s ease;
-  border: 15px solid #FADD02;
-}
-
-.tre {
-  width: 200px;
-  height: 200px;
-  margin: -35% 0% 0% 4%;
+  width: 400px;
+  height: 400px;
+  margin: -25% 0% 0% 57%;
   animation: startscale 5s ease, 10s intro 5.5s infinite ease-in-out;
   background-color: #FADD02;
 }
 
-.quattro {
-  width: 300px;
-  height: 300px;
-  margin: -4% 0% 0% 57%;
+.tre {
+  width: 400px;
+  height: 400px;
+  margin: -60% 0% 0% 52%;
   animation: startscale 5s ease, 10s intro 6s infinite ease-in-out;
   background-color: #FADD02;
 }
 
-.cinque {
-  width: 400px;
-  height: 400px;
-  margin: -10% 0% 0% 65%;
-  animation: startscale 5s ease;
-  border: 15px solid #FADD02;
-}
 
 .circle:before {
   animation-duration: 19.3s;
@@ -112,49 +90,29 @@
     }
 }
 
-@keyframes rot {
-    0% {
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    50% {
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    60% {
-      -webkit-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      transform: rotate(180deg);
-    }
-
-    100% {
-      -webkit-transform: rotate(50deg);
-      -moz-transform: rotate(50deg);
-      transform: rotate(50deg);
-    }
-}
-
 @keyframes intro {
   0% {
     transform: translate(0%, 0%);
   }
-
-  10% {
+  25% {
     transform: translate(30%, 80%);
-    transform: rotate(50deg);
   }
-  30% {
+  50% {
     transform: translate(0%, 80%);
   }
-  60% {
+  75% {
     transform: translate(40%, 80%);
   }
-  80% {
-    transform: translate(160%, -20%);
-  }
-  99% {
+  95% {
     transform: translate(0%, 0%);
+  }
+}
+
+@keyframes circle-bg {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(6);
   }
 }
