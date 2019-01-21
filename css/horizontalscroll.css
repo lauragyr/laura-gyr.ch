@@ -3,7 +3,7 @@
 
 /*   CONTAINERS   */
 #container {
-  overflow-y: hidden;
+  overflow-y: scroll;
   overflow-x: hidden;
   transform: none;
   transform-origin: top left;
@@ -23,8 +23,8 @@
 .boxwrapper{
   position:relative;
   width:100vw;
-  height:40vh;
-  display:flex;
+  height:300px;
+  display:block;
   margin: 0 ;
   margin-bottom: 0px;
   padding:20px;
@@ -50,7 +50,7 @@
 
 .info {
   z-index:10;
-  padding: 20px 50px 50px 50px;
+  padding: 20px 10px 10px 20px;
   color: white;
   white-space: pre-wrap;
   width:calc(100% - 100px);
@@ -89,11 +89,13 @@
 .info h3 {
   font-family: Archia SemiBold;
   font-size: 16pt;
+  margin-top: -30px;
 }
 
 .info h2 {
   font-family: Archia SemiBold;
   font-size: 30pt;
+  margin-top: -30px;
 }
 
 
@@ -117,8 +119,9 @@
   }
 
   .info {
-    width:calc(100% - 300px);
-    height:calc(100% - 300px);
+    width:calc(100% - 200px);
+    height:calc(100% - 200px);
+    padding: 20px 50px 50px 50px;
   }
 
   #container .cover + div {
@@ -160,15 +163,29 @@
     z-index: 1;
   }
 
-  .info h3 { font-size: 30pt; }
-
-  .info h2 { font-size: 70pt; }
-
-  .boxwrapper:hover .info {
-  color: transparent;
+  .info h3 { 
+    font-size: 30pt; 
+    margin-top: 0px;
   }
 
-  .boxwrapper:hover .box {
-  opacity: 0.0;
+  .info h2 { 
+    font-size: 70pt; 
+    margin-top: 0px;
+  }
+
+  /* HOVER TRANSITIONS HORIZOTALSCROLL */
+  .boxwrapper:hover .yellow {
+    background-color: #6102FA;
+    transition: all .5s ease-in-out;
+  }
+
+  .boxwrapper:hover .violet {
+    background-color: #FADD02;
+    transition: all .5s ease-in-out;
+  }
+
+  .boxwrapper:hover {
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
   }
 }

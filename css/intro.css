@@ -1,11 +1,11 @@
-/*body {
+body {
   opacity: 0;
-  -webkit-transition: opacity 1s ease-in;
-  -moz-transition: opacity 1s ease-in;
-  -o-transition: opacity 1s ease-in;
-  -ms-transition: opacity 1s ease-in;
-  transition: opacity 1s ease-in;
-}*/
+  -webkit-transition: opacity .5s ease-in;
+  -moz-transition: opacity .5s ease-in;
+  -o-transition: opacity .5s ease-in;
+  -ms-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-in;
+}
 /*not necessary because of introanim*/
 
 #menubar {
