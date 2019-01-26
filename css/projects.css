@@ -168,10 +168,6 @@ p { font-family: Archia Light; }
   z-index: 3;
 }
 
-.nextbox a {
-  z-index: 4;
-}
-
 .nextbox::before {
   border-bottom: 5px solid #6102FA;
   border-left: 5px solid #6102FA;
