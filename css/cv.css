@@ -23,12 +23,13 @@ transition: transform ease 0.5s;
 
 #menubarActive {
 background-color: #FFF;
-transition:all 1s ease;
+transition: all 1s ease;
 width: 100%;
 height: 100%;
 top: 0;
 right: 0;
 position: fixed;
+z-index: 4;
 }
 
 .about {
@@ -42,7 +43,6 @@ h3 {
   padding-bottom: 70px;
 }
 
-/* MOBILE*/
 .button {
   width: 150px;
   height: 100px;
@@ -52,7 +52,6 @@ h3 {
   padding: 10px;
 }
 
-/* MOBILE*/
 .button p {
   color: #FFF;
   font-family: Archia SemiBold;
@@ -60,14 +59,12 @@ h3 {
   text-align: right;
 }
 
-/* MOBILE*/
 .footnote {
   clear: both;
   color: #FFF;
   font-family: Archia Light;
   font-size: 8pt;
 }
-
 
 span {
   font-family: Archia SemiBold;
@@ -105,7 +102,6 @@ h3 {
     top: -5px;
     transform: scale(0);
     transition: all 0.5s ease-in-out 0s;
-    z-index: 3;
   }
   
   .button::before {
@@ -135,7 +131,10 @@ h3 {
 .button p {
   font-size: 30pt;
   transition: all 0.75s ease-in-out 0s;
+}
 
+.button a {
+  z-index: 4;
 }
 
 .footnote {
