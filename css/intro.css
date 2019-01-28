@@ -5,8 +5,9 @@ body {
   -o-transition: opacity .5s ease-in;
   -ms-transition: opacity .5s ease-in;
   transition: opacity .5s ease-in;
+
+  cursor: url("../assets/cursor/cursor_yellow.png");
 }
-/*not necessary because of introanim*/
 
 #menubar {
   background-color: #6102FA;
