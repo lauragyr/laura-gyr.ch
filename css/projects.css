@@ -86,6 +86,7 @@ a {
   transform: scale(1.0);
   transition: transform ease .3s;
   transform-origin: 0;
+  z-index: 5;
 }
 
 .right a:hover {
@@ -133,17 +134,22 @@ p { font-family: Archia Light; }
 
 .project>img {
   padding-top: 30px;
-  border-radius: 1%;
   background-color: #F2F2F2;
   display: block;
   margin: auto;
   width: 100%;
 }
 
+video {
+  padding-top: 30px;
+}
+
 /* NEXT PROJECT  */
 .next {
   display: flex;
   justify-content: space-between;
+  padding: 30px 20px 50px 20px;
+
 }
 
 .nextbox {
@@ -287,6 +293,7 @@ p { font-family: Archia Light; }
   .project { padding: 100px; }
 
   .project>img { padding-top: 70px; }
+  video { padding-top: 70px; }
 
   .next { padding: 70px 30px 100px 100px; }
 
