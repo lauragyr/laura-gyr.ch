@@ -83,6 +83,7 @@
 .one { background-image: url("../assets/covers/ref-cover.png"); }
 .two { background-image: url("../assets/covers/bees-cover.jpg"); }
 .three { background-image: url("../assets/covers/faden-cover.jpg"); }
+.four { background-image: url("../assets/covers/balls_cover.jpg"); }
 
 
 /*   BOX-STYLE   */
@@ -97,8 +98,6 @@
   font-size: 30pt;
   margin-top: -30px;
 }
-
-
 
 
 /* MEDIAQUERIES */
@@ -132,8 +131,13 @@
   #container {
     overflow-y:scroll;
     overflow-x:scroll;
+
     transform: rotate(-90deg) translateX(-100%);
+    -moz-transform: rotate(-90deg) translateX(-100%);
+
     transform-origin: top left;
+    -moz-transform-origin: top left;
+
     width:100vh;
     height:100vw;
   }
@@ -141,9 +145,14 @@
   #containerscroll {
     width:100vw;
     height:100vh;
+
     transform: rotate(90deg) translateY(-100vh);
+    -moz-transform: rotate(90deg) translateY(-100vh);
+
     transform-origin: top left;
-    white-space:nowrap;
+    -moz-transform-origin: top left;
+
+    white-space: nowrap;
     margin: 0;
   }
 
