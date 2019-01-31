@@ -35,6 +35,8 @@ a {
 
 html {
   scroll-behavior: smooth;
+  overflow: -moz-scrollbars-none; /* Firefox Hide Scrollbar */
+  -ms-overflow-style: none; /* IE Hide Scrollbar */
 }
 
 #menubar {
