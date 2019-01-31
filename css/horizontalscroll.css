@@ -82,7 +82,10 @@
 .one { background-image: url("../assets/covers/ref-cover.png"); }
 .two { background-image: url("../assets/covers/bees-cover.jpg"); }
 .three { background-image: url("../assets/covers/faden-cover.jpg"); }
-.four { background-image: url("../assets/covers/balls_cover.jpg"); }
+.four { background-image: url("../assets/covers/balls-cover.jpg"); }
+.five { background-image: url("../assets/covers/adoptions-cover.jpg"); }
+.six { background-image: url("../assets/covers/idiot-cover.jpg"); }
+
 
 
 /*   BOX-STYLE   */
