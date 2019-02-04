@@ -18,6 +18,7 @@
   transform-origin: top left;
   white-space: nowrap;
   margin: auto;
+  padding: 20px;
 }
 
 .boxwrapper {
@@ -160,6 +161,7 @@
 
     white-space: nowrap;
     margin: 0;
+    padding: 0px;
   }
 
   .boxwrapper {
