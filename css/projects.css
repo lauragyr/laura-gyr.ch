@@ -238,37 +238,6 @@ video {
   margin: 30px 0px 20px 0px;
 }
 
- a svg:hover .instagram,
- a svg:hover .github,
- a svg:hover .behance { 
-  fill: #3D00B2;
-  transition: all .2s ease-in-out;
-}
-
-
-/* LABEL SWITCH FOOTER */
-.item1 .new-label span, .item2 .new-label span, .item3 .new-label span {
-  position: relative;
-}
-.item1:hover .new-label span, .item2:hover .new-label span, .item3:hover .new-label span {
-  display: none;
-}
-.item1:hover .new-label:after, .item1:active .new-label:after {
-  content: 'laura gyr';
-  color: #3D00B2;
-}
-
-.item2:hover .new-label:after, .item2:active .new-label:after {
-  content: 'my portfolio';
-  color: #3D00B2;
-}
-
-.item3:hover .new-label:after, .item3:active .new-label:after{
-  content: 'email me';
-  color: #3D00B2;
-}
-
-
 
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 678px) {
@@ -293,6 +262,7 @@ video {
   .project { padding: 100px; }
 
   .project>img { padding-top: 70px; }
+  
   video { padding-top: 70px; }
 
   .next { padding: 70px 30px 100px 100px; }
@@ -302,7 +272,36 @@ video {
     height: 200px;
   }
 
+  a svg:hover .instagram,
+  a svg:hover .github,
+  a svg:hover .behance { 
+    fill: #3D00B2;
+    transition: all .2s ease-in-out;
+  }
+
   .next h3 { font-size: 30pt; } 
+}
+
+  /* LABEL SWITCH FOOTER */
+.item1 .new-label span, .item2 .new-label span, .item3 .new-label span {
+  position: relative;
+}
+.item1:hover .new-label span, .item2:hover .new-label span, .item3:hover .new-label span {
+  display: none;
+}
+.item1:hover .new-label:after, .item1:active .new-label:after {
+  content: 'laura gyr';
+  color: #3D00B2;
+}
+
+.item2:hover .new-label:after, .item2:active .new-label:after {
+  content: 'my portfolio';
+  color: #3D00B2;
+}
+
+.item3:hover .new-label:after, .item3:active .new-label:after{
+  content: 'email me';
+  color: #3D00B2;
 }
 
 @media only screen and (min-width: 560px) {
