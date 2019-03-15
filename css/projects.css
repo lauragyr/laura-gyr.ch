@@ -52,7 +52,21 @@
   right: 50%;
   transition: all 3.5s ease-in-out, background-color 1s ease;
   z-index: 19;
+}
 
+#kantar {
+  margin-top: 30px;
+  color: #FADD02;
+  transition: ease .3s;
+}
+
+#kantar:hover {
+  margin-top: 30px;
+  color: #6102FA;
+}
+
+#addlink {
+  margin-bottom: 50px;
 }
 
 .left {
@@ -83,14 +97,13 @@ a {
   font-size: 13pt;
   color: #6102FA;
   text-decoration: none;
-  transform: scale(1.0);
-  transition: transform ease .3s;
+  transition: ease .3s;
   transform-origin: 0;
   z-index: 5;
 }
 
 .right a:hover {
-  transform: scale(1.1);
+  color: #FADD02;
 }
 
 
@@ -149,7 +162,6 @@ video {
   display: flex;
   justify-content: space-between;
   padding: 30px 20px 50px 20px;
-
 }
 
 .nextbox {
@@ -262,7 +274,7 @@ video {
   .project { padding: 100px; }
 
   .project>img { padding-top: 70px; }
-  
+
   video { padding-top: 70px; }
 
   .next { padding: 70px 30px 100px 100px; }
