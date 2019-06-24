@@ -80,12 +80,13 @@
   z-index: 1;
 }
 
-.one { background-image: url("../assets/covers/ref-cover.png"); }
-.two { background-image: url("../assets/covers/bees-cover.jpg"); }
-.three { background-image: url("../assets/covers/faden-cover.jpg"); }
-.four { background-image: url("../assets/covers/balls-cover.jpg"); }
-.five { background-image: url("../assets/covers/adoptions-cover.jpg"); }
-.six { background-image: url("../assets/covers/idiot-cover.jpg"); }
+.one { background-image: url("../assets/covers/noumenon-cover.png"); }
+.two { background-image: url("../assets/covers/ref-cover.png"); }
+.three { background-image: url("../assets/covers/bees-cover.jpg"); }
+.four { background-image: url("../assets/covers/faden-cover.jpg"); }
+.five { background-image: url("../assets/covers/balls-cover.jpg"); }
+.six { background-image: url("../assets/covers/adoptions-cover.jpg"); }
+.seven { background-image: url("../assets/covers/idiot-cover.jpg"); }
 
 
 
