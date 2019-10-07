@@ -1,0 +1,105 @@
+@font-face {
+  font-family: Archia Light;
+  src: url("../assets/fonts/archia-light-webfont.woff");
+}
+
+@font-face {
+  font-family: Archia SemiBold;
+  src: url("../assets/fonts/archia-semibold-webfont.woff");
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 70%;
+  margin:20% auto;
+}
+
+#screen1, #screen2, #screen3, #screen4, #screen5, #screen6 {
+  position: absolute;
+  opacity: 0;
+  overflow-wrap: break-word;
+  padding-right: 20%;
+
+}
+  
+
+
+h3 {
+  font-family: Archia SemiBold;
+  font-size: 70px;
+  color: #6102FA;
+}
+
+/*.typing > *{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typingAnim 1.5s steps(50);
+}
+
+
+@keyframes typingAnim{
+  from { width: 0 }
+  to { width: 100% }
+} */
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+#screen1 {
+  animation: fadeInOut 5s;
+}
+
+#screen2 {
+  animation: fadeInOut 5s;
+  animation-delay: 6s;
+}
+
+#screen3 {
+  animation: fadeInOut 5s;
+  animation-delay: 12s;
+}
+
+#screen4 {
+  animation: fadeInOut 5s;
+  animation-delay: 18s;
+}
+
+#screen5 {
+  animation: fadeInOut 5s;
+  animation-delay: 24s;
+}
+
+#screen6 {
+  animation: fadeIn 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 30s;
+}
+
+
+
+
