@@ -55,13 +55,19 @@
 }
 
 /* noumenon shizzl */
-#button-noumenon {
+.twoline-link {
   display: block;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+#button-noumenon {
+  /*display: block;*/
+  display:none;
   width: 250px;
   opacity: 0.8;
   z-index: 3;
   float: right;
-  display: none;
 }
 
 .left a {
@@ -87,6 +93,7 @@
   margin-bottom: 50px;
 }
 
+
 .left {
   padding: 100px 20px 10px 20px;
   float: none;
@@ -105,7 +112,7 @@
 }
 
 .right a {
-  width: auto;
+  /*width: auto;*/
   z-index: 0;
   transition: 0.5s;
 }
@@ -120,15 +127,14 @@ a {
   z-index: 5;
 }
 
-.noumenon {
-  display: block;
-  position: relative;
-}
 
 .right a:hover {
   color: #FADD02;
 }
 
+project-links {
+  padding-bottom: 10px;
+}
 
 /* STYLES */
 h3 {

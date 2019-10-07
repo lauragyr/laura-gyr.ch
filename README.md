@@ -1,3 +1,3 @@
 # laura-gyr.ch
 
-This is my first ever portfolio-website that I made by myself. 
+This is  my first portfolio-website, coded from scratch with HTML, CSS and JavaScript.

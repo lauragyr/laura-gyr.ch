@@ -41,7 +41,7 @@ overflow-y: hidden;
 
 #scroll {
   position: absolute;
-  bottom: 10%;
+  bottom: 50px;
   width: 100%;
   text-align: center;
   z-index: -1;
