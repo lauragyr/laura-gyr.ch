@@ -86,27 +86,27 @@ h3 {
 }
 
 #screen4 {
-  animation: fadeInOut 5s;
+  animation: fadeInOut 7s;
   animation-delay: 13s;
 }
 
 #screen5 {
   animation: fadeInOut 5s;
-  animation-delay: 18s;
+  animation-delay: 20s;
 }
 
 #screen6 {
   animation: fadeIn 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 23s;
+  animation-delay: 25s;
 }
 
 #screen7 {
   animation: fadeIn 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 25s;
+  animation-delay: 27s;
 }
 
 
