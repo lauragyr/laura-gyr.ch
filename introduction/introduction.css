@@ -22,29 +22,27 @@ body {
   position: absolute;
   opacity: 0;
   overflow-wrap: break-word;
-  padding-right: 20%;
-
+  padding-right: 15%;
 }
   
 
+a { text-decoration: none; }
 
-h3 {
+
+/*  BUTTON TEXT  */
+h2 {
   font-family: Archia SemiBold;
-  font-size: 70px;
   color: #6102FA;
 }
 
-/*.typing > *{
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typingAnim 1.5s steps(50);
+
+/*  BIG TEXT  */
+h3 {
+  font-family: Archia SemiBold;
+  font-size: 90px;
+  color: #6102FA;
 }
 
-
-@keyframes typingAnim{
-  from { width: 0 }
-  to { width: 100% }
-} */
 
 @keyframes fadeIn{
   0% {
@@ -60,7 +58,11 @@ h3 {
     opacity: 0;
   }
 
-  50% {
+  40% {
+    opacity: 1;
+  }
+
+  80% {
     opacity: 1;
   }
 
@@ -70,36 +72,103 @@ h3 {
 }
 
 #screen1 {
-  animation: fadeInOut 5s;
+  animation: fadeInOut 4s;
 }
 
 #screen2 {
-  animation: fadeInOut 5s;
-  animation-delay: 6s;
+  animation: fadeInOut 4s;
+  animation-delay: 4s;
 }
 
 #screen3 {
   animation: fadeInOut 5s;
-  animation-delay: 12s;
+  animation-delay: 8s;
 }
 
 #screen4 {
   animation: fadeInOut 5s;
-  animation-delay: 18s;
+  animation-delay: 13s;
 }
 
 #screen5 {
   animation: fadeInOut 5s;
-  animation-delay: 24s;
+  animation-delay: 18s;
 }
 
 #screen6 {
   animation: fadeIn 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 30s;
+  animation-delay: 23s;
+}
+
+#screen7 {
+  animation: fadeIn 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 25s;
 }
 
 
 
+.portfolio-box {
+  opacity: 0;
+  width: 200px;
+  text-align: center;
+  border: 5px solid #FADD02;
+  position: relative;
+  transition: all 0.75s ease-in-out 0s;
+}
 
+/* FANCY BUTTON TRANSITION */
+.portfolio-box::after, .portfolio-box::before {
+  content: "";
+  height: calc(100% + 5px);
+  width: calc(100% + 5px);;
+  left: -5px;
+  position: absolute;
+  top: -5px;
+  transform: scale(0);
+  transition: all 0.5s ease-in-out 0s;
+  z-index: 3;
+}
+
+.portfolio-box::before {
+  border-bottom: 5px solid #6102FA;
+  border-left: 5px solid #6102FA;
+  transform-origin: 0 100% 0;
+}
+
+.portfolio-box::after {
+  border-right: 5px solid #6102FA;
+  border-top: 5px solid #6102FA;
+  transform-origin: 100% 0 0;
+}
+
+.portfolio-box:hover::after, .portfolio-box:hover::before {
+  transform: scale(1);
+}
+.portfolio-box:hover {
+  border: 5px solid rgba(0, 160, 80, 0);
+}
+
+/* SWITCHING COLOR OF NEXTBOX ON HOVER */
+.portfolio-box h2 {
+  color: #6102FA;
+  text-align: right;
+  padding: 10px;
+  transition: all 0.75s ease-in-out 0s;
+}
+
+.portfolio-box:hover h2 {
+  color: #FADD02;
+  text-align: right;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 560px) {
+  h3 {
+    font-size: 50px;
+    color: #6102FA;
+  }
+}

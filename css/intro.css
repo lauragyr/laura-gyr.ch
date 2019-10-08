@@ -41,12 +41,13 @@ overflow-y: hidden;
 
 #scroll {
   position: absolute;
-  bottom: 50px;
+  bottom: 50%;
   width: 100%;
   text-align: center;
   z-index: -1;
   /*transition-delay: 5s;*/ /*SetTimeOut in JS*/
 }
+
 
 #scroll h3 {
   color: white;
@@ -68,5 +69,9 @@ p {
 @media only screen and (max-width: 500px) {
   p {
     font-size: 35pt;
+  }
+
+  #scroll h3 {
+    bottom: 20%;
   }
 }
