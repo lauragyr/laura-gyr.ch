@@ -41,7 +41,7 @@ overflow-y: hidden;
 
 #scroll {
   position: absolute;
-  bottom: 50%;
+  padding-bottom: 50%;
   width: 100%;
   text-align: center;
   z-index: -1;
@@ -72,6 +72,6 @@ p {
   }
 
   #scroll h3 {
-    bottom: 20%;
+    padding-bottom: 20%;
   }
 }
