@@ -1,0 +1,50 @@
+* {
+  margin:0;
+  box-sizing: border-box;
+}
+
+#preloader {
+    background-color: #FADD02;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.startdot {
+    height: 100px;
+    width: 100px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin: 0;
+    position: relative;
+
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+    animation-iteration-count: 10;
+
+    transition: width 2s ease, height 2s ease; 
+  }
+
+  .dot-scale {
+    width: 2000px;
+    height: 2000px;
+  }
+  
+  @keyframes bounce {
+    from { transform: translate3d(0, 0, 0);     }
+    to   { transform: translate3d(0, 200px, 0); }
+  }
+
+  @keyframes scale {
+    from { width: 100px; height: 100px; }
+    to { width: 2000px; height: 2000px; }
+  }

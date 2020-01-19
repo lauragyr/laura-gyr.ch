@@ -10,12 +10,18 @@
 	<link rel="stylesheet" type="text/css" href="css/horizontalscroll.css">
 	<link rel="stylesheet" type="text/css" href="css/intro.css">
 	<link rel="stylesheet" type="text/css" href="css/intro-animation.css">
+	<link rel="stylesheet" type="text/css" href="css/preloader.css">
 	<link rel="stylesheet" type="text/css" href="plugins/fullpage.css">
 </head>
 
 <body onload="document.body.style.opacity='1'">
 	<div id="menubar" onclick="switchViolet()"></div>
 	<div id="fullpage">
+		<div class="introscreen">
+		<div id="preloader">
+			<div class="startdot">
+			</div>
+		</div>
 		<div id="intro" class="section">
 			<p>hej there!</p>
 			<div id="animation">
@@ -29,6 +35,7 @@
 				<h3>scroll down</h3>
 			</div>
 		</div>
+	</div>
 
 		<div id="container" class="section">
 			<div id="containerscroll">
@@ -152,6 +159,19 @@
 		scrollHorizontally: true,
 	});
 </script>-->
+<script>
+	//preoloader stuff
+setTimeout(function() {
+	document.querySelector("body").style.visibility = "visible"; 
+    document.querySelector("#preloader").style.visibility = "hidden"; 
+}, 4000);
+
+setTimeout(function() {
+	var dot = document.getElementsByClassName("startdot");
+  		dot[0].classList.add('dotscale');
+//document.getElementById("MyElement").classList.remove('dot');
+}, 100);
+</script> 
 </body>
 
 </html>
