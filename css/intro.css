@@ -1,73 +1,74 @@
 body {
-  opacity: 0;
-  -webkit-transition: opacity .5s ease-in;
-  -moz-transition: opacity .5s ease-in;
-  -o-transition: opacity .5s ease-in;
-  -ms-transition: opacity .5s ease-in;
-  transition: opacity .5s ease-in;
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in;
+    -moz-transition: opacity .5s ease-in;
+    -o-transition: opacity .5s ease-in;
+    -ms-transition: opacity .5s ease-in;
+    transition: opacity .5s ease-in;
 }
 
 #menubar {
-  background-color: #6102FA;
-  transition: transform ease 0.5s;
+    background-color: #6102FA;
+    transition: transform ease 0.5s;
 }
 
 #menubar:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 #menubarActive {
-  background-color: #6102FA;
-  transition: all 1s ease;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  position: fixed;
-  z-index: 10;
+    background-color: #6102FA;
+    transition: all 1s ease;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 10;
 }
 
 #intro {
-  height: 100vh;
-width: 100%;
-overflow-y: hidden;
-
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
 }
 
 #intro h3 {
-  font-family: Archia SemiBold;
-  color: #A5A5A5;
+    font-family: Archia SemiBold;
+    color: #A5A5A5;
 }
 
 #scroll {
-  position: absolute;
-  bottom: 20%;
-  width: 100%;
-  text-align: center;
-  z-index: -1;
-  /*transition-delay: 5s;*/ /*SetTimeOut in JS*/
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    /*transition-delay: 5s;*/
+    /*SetTimeOut in JS*/
 }
 
-
 #scroll h3 {
-  color: white;
+    color: white;
 }
 
 p {
-  font-family: Archia SemiBold;
-  font-size: 50pt;
-  color: white; /*#A5A5A5*/
-  top: 30%;
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  z-index: -1;
+    font-family: Archia SemiBold;
+    font-size: 50pt;
+    color: white;
+    /*#A5A5A5*/
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 5;
 }
 
 
 /*MEDIAQUERIES*/
+
 @media only screen and (max-width: 500px) {
-  p {
-    font-size: 35pt;
-  }
+    p {
+        font-size: 35pt;
+    }
 }
